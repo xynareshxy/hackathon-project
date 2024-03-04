@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Funtional Testing" parallel="none">
+	<test name="Smoke Test one">
+		<groups>
+			<run>
+				<include name="Smoke Test one" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="testScenarios.DisplayBookshelves" />
+		</classes>
+	</test>
+
+	<test name="Regression Test one">
+		<groups>
+			<run>
+				<include name="Regression Test one" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="testScenarios.DisplayBookshelves" />
+		</classes>
+	</test>
+
+	<test name="Smoke Test two">
+		<groups>
+			<run>
+				<include name="Smoke Test two" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="testScenarios.DisplayBookshelves" />
+		</classes>
+	</test>
+</suite>
