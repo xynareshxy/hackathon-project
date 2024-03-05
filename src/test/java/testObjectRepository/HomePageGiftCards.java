@@ -4,10 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-/***********************************************************************************
- * * Class Name : HomePageGiftCards * Description : To Get all the web elements
- * present in the website * and to return the same. *
- ************************************************************************************/
+
 
 public class HomePageGiftCards {
 

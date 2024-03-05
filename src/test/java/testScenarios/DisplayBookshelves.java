@@ -71,8 +71,6 @@ public class DisplayBookshelves extends DriverSetup {
 
 		}
 
-		logger.log(Status.PASS, "PASSED");
-
 		action = new Actions(driver);
 		action.moveToElement(HomePageBookShelves.priceFilter(driver)).perform();
 		ExplicitWait.priceFilterVisibility(driver);

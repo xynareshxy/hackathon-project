@@ -1,48 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Funtional Testing]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Smoke Test one(failed)">
-    <groups>
-      <run>
-        <include name="Smoke Test one"/>
-      </run>
-    </groups>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="testScenarios.DisplayBookshelves">
         <methods>
-          <include name="driverConfig"/>
           <include name="clickOnBookShelvesMenu"/>
         </methods>
       </class> <!-- testScenarios.DisplayBookshelves -->
     </classes>
-  </test> <!-- Smoke Test one(failed) -->
-  <test thread-count="5" name="Regression Test one(failed)">
-    <groups>
-      <run>
-        <include name="Regression Test one"/>
-      </run>
-    </groups>
-    <classes>
-      <class name="testScenarios.DisplayBookshelves">
-        <methods>
-          <include name="mouseHoverOfBrandFilter"/>
-        </methods>
-      </class> <!-- testScenarios.DisplayBookshelves -->
-    </classes>
-  </test> <!-- Regression Test one(failed) -->
-  <test thread-count="5" name="Smoke Test two(failed)">
-    <groups>
-      <run>
-        <include name="Smoke Test two"/>
-      </run>
-    </groups>
-    <classes>
-      <class name="testScenarios.DisplayBookshelves">
-        <methods>
-          <include name="displayErrorMessage"/>
-          <include name="giftCard"/>
-        </methods>
-      </class> <!-- testScenarios.DisplayBookshelves -->
-    </classes>
-  </test> <!-- Smoke Test two(failed) -->
-</suite> <!-- Failed suite [Funtional Testing] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -7,12 +7,6 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
-/**************************************************************************************
- *                                                                                    *
- * Class Name     : ScreenShot                                                        * 
- * Description    : To Take the screenshots and Copy the .png file into work path.    *
- *                                                                                    *
- **************************************************************************************/
 
 public class ScreenShot {
 

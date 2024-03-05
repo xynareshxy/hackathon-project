@@ -10,12 +10,6 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-/***********************************************************************************
-*                                                                                  *
-* Class Name     : ExcelWrite                                                      * 
-* Description    : To Write the output on the excel sheet.                         *
-*                                                                                  *
-************************************************************************************/
 
 public class ExcelWrite {
 
@@ -25,7 +19,7 @@ public class ExcelWrite {
 	public static XSSFCell cell = null;
 	public static XSSFCell cell2 = null;
 	public static XSSFRow row = null;
-	public static String exFilePath1 = "./src/test/java/dataTables/BookShelvesBelowRs15000.xlsx";
+	public static String exFilePath1 = "./src/test/java/dataTables/BookShelvesBelowRs150001.xlsx";
 	public static String exFilePath2 = "./src/test/java/dataTables/ByAtHomeBookShelves.xlsx";
 	
 	public static void below15000BookShelves(String[] bookShelves , String[] prices , int x) {

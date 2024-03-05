@@ -1,60 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-04T20:22:50 IST" name="Funtional Testing" finished-at="2024-03-04T20:23:28 IST" duration-ms="38310">
+  <suite started-at="2024-03-05T14:27:58 IST" name="Default suite" finished-at="2024-03-05T14:28:49 IST" duration-ms="50340">
     <groups>
       <group name="Smoke Test two">
-        <method signature="DisplayBookshelves.giftCard()[pri:3, instance:testScenarios.DisplayBookshelves@5bda8e08]" name="giftCard" class="testScenarios.DisplayBookshelves"/>
-        <method signature="DisplayBookshelves.screenShotOfErrorMessage()[pri:4, instance:testScenarios.DisplayBookshelves@5bda8e08]" name="screenShotOfErrorMessage" class="testScenarios.DisplayBookshelves"/>
-        <method signature="DisplayBookshelves.displayErrorMessage()[pri:5, instance:testScenarios.DisplayBookshelves@5bda8e08]" name="displayErrorMessage" class="testScenarios.DisplayBookshelves"/>
+        <method signature="DisplayBookshelves.giftCard()[pri:3, instance:testScenarios.DisplayBookshelves@49e53c76]" name="giftCard" class="testScenarios.DisplayBookshelves"/>
+        <method signature="DisplayBookshelves.screenShotOfErrorMessage()[pri:4, instance:testScenarios.DisplayBookshelves@49e53c76]" name="screenShotOfErrorMessage" class="testScenarios.DisplayBookshelves"/>
+        <method signature="DisplayBookshelves.displayErrorMessage()[pri:5, instance:testScenarios.DisplayBookshelves@49e53c76]" name="displayErrorMessage" class="testScenarios.DisplayBookshelves"/>
       </group> <!-- Smoke Test two -->
       <group name="Smoke Test one">
-        <method signature="DisplayBookshelves.clickOnBookShelvesMenu()[pri:1, instance:testScenarios.DisplayBookshelves@4c371370]" name="clickOnBookShelvesMenu" class="testScenarios.DisplayBookshelves"/>
+        <method signature="DisplayBookshelves.clickOnBookShelvesMenu()[pri:1, instance:testScenarios.DisplayBookshelves@49e53c76]" name="clickOnBookShelvesMenu" class="testScenarios.DisplayBookshelves"/>
       </group> <!-- Smoke Test one -->
       <group name="Regression Test one">
-        <method signature="DisplayBookshelves.mouseHoverOfBrandFilter()[pri:2, instance:testScenarios.DisplayBookshelves@233795b6]" name="mouseHoverOfBrandFilter" class="testScenarios.DisplayBookshelves"/>
+        <method signature="DisplayBookshelves.mouseHoverOfBrandFilter()[pri:2, instance:testScenarios.DisplayBookshelves@49e53c76]" name="mouseHoverOfBrandFilter" class="testScenarios.DisplayBookshelves"/>
       </group> <!-- Regression Test one -->
     </groups>
-    <test started-at="2024-03-04T20:22:50 IST" name="Smoke Test one" finished-at="2024-03-04T20:23:07 IST" duration-ms="16968">
+    <test started-at="2024-03-05T14:27:58 IST" name="Default test" finished-at="2024-03-05T14:28:49 IST" duration-ms="50340">
       <class name="testScenarios.DisplayBookshelves">
-        <test-method is-config="true" signature="driverConfig()[pri:0, instance:testScenarios.DisplayBookshelves@4c371370]" started-at="2024-03-04T20:22:50 IST" name="driverConfig" finished-at="2024-03-04T20:22:56 IST" duration-ms="5570" status="PASS">
+        <test-method is-config="true" signature="driverConfig()[pri:0, instance:testScenarios.DisplayBookshelves@49e53c76]" started-at="2024-03-05T14:27:59 IST" name="driverConfig" finished-at="2024-03-05T14:28:08 IST" duration-ms="9574" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverConfig -->
-        <test-method signature="clickOnBookShelvesMenu()[pri:1, instance:testScenarios.DisplayBookshelves@4c371370]" started-at="2024-03-04T20:22:56 IST" name="clickOnBookShelvesMenu" finished-at="2024-03-04T20:23:07 IST" duration-ms="11346" status="PASS">
+        <test-method signature="clickOnBookShelvesMenu()[pri:1, instance:testScenarios.DisplayBookshelves@49e53c76]" started-at="2024-03-05T14:28:08 IST" name="clickOnBookShelvesMenu" finished-at="2024-03-05T14:28:20 IST" duration-ms="11452" status="FAIL">
+          <exception class="java.lang.ArrayIndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 28 out of bounds for length 28]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: Index 28 out of bounds for length 28
+at testScenarios.DisplayBookshelves.clickOnBookShelvesMenu(DisplayBookshelves.java:90)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArrayIndexOutOfBoundsException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnBookShelvesMenu -->
-      </class> <!-- testScenarios.DisplayBookshelves -->
-    </test> <!-- Smoke Test one -->
-    <test started-at="2024-03-04T20:23:07 IST" name="Regression Test one" finished-at="2024-03-04T20:23:22 IST" duration-ms="14917">
-      <class name="testScenarios.DisplayBookshelves">
-        <test-method signature="mouseHoverOfBrandFilter()[pri:2, instance:testScenarios.DisplayBookshelves@233795b6]" started-at="2024-03-04T20:23:07 IST" name="mouseHoverOfBrandFilter" finished-at="2024-03-04T20:23:22 IST" duration-ms="14913" status="PASS">
+        <test-method signature="mouseHoverOfBrandFilter()[pri:2, instance:testScenarios.DisplayBookshelves@49e53c76]" started-at="2024-03-05T14:28:20 IST" name="mouseHoverOfBrandFilter" finished-at="2024-03-05T14:28:37 IST" duration-ms="17116" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mouseHoverOfBrandFilter -->
-      </class> <!-- testScenarios.DisplayBookshelves -->
-    </test> <!-- Regression Test one -->
-    <test started-at="2024-03-04T20:23:22 IST" name="Smoke Test two" finished-at="2024-03-04T20:23:28 IST" duration-ms="6380">
-      <class name="testScenarios.DisplayBookshelves">
-        <test-method signature="giftCard()[pri:3, instance:testScenarios.DisplayBookshelves@5bda8e08]" started-at="2024-03-04T20:23:22 IST" name="giftCard" finished-at="2024-03-04T20:23:26 IST" duration-ms="3563" status="PASS">
+        <test-method signature="giftCard()[pri:3, instance:testScenarios.DisplayBookshelves@49e53c76]" started-at="2024-03-05T14:28:37 IST" name="giftCard" finished-at="2024-03-05T14:28:44 IST" duration-ms="6809" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- giftCard -->
-        <test-method signature="screenShotOfErrorMessage()[pri:4, instance:testScenarios.DisplayBookshelves@5bda8e08]" started-at="2024-03-04T20:23:26 IST" name="screenShotOfErrorMessage" finished-at="2024-03-04T20:23:26 IST" duration-ms="360" status="PASS">
+        <test-method signature="screenShotOfErrorMessage()[pri:4, instance:testScenarios.DisplayBookshelves@49e53c76]" started-at="2024-03-05T14:28:44 IST" name="screenShotOfErrorMessage" finished-at="2024-03-05T14:28:44 IST" duration-ms="530" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShotOfErrorMessage -->
-        <test-method signature="displayErrorMessage()[pri:5, instance:testScenarios.DisplayBookshelves@5bda8e08]" started-at="2024-03-04T20:23:26 IST" name="displayErrorMessage" finished-at="2024-03-04T20:23:26 IST" duration-ms="21" status="PASS">
+        <test-method signature="displayErrorMessage()[pri:5, instance:testScenarios.DisplayBookshelves@49e53c76]" started-at="2024-03-05T14:28:44 IST" name="displayErrorMessage" finished-at="2024-03-05T14:28:44 IST" duration-ms="37" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- displayErrorMessage -->
-        <test-method is-config="true" signature="closingBrowser()[pri:0, instance:testScenarios.DisplayBookshelves@5bda8e08]" started-at="2024-03-04T20:23:26 IST" name="closingBrowser" finished-at="2024-03-04T20:23:28 IST" duration-ms="2426" status="PASS">
+        <test-method is-config="true" signature="closingBrowser()[pri:0, instance:testScenarios.DisplayBookshelves@49e53c76]" started-at="2024-03-05T14:28:44 IST" name="closingBrowser" finished-at="2024-03-05T14:28:49 IST" duration-ms="4669" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closingBrowser -->
       </class> <!-- testScenarios.DisplayBookshelves -->
-    </test> <!-- Smoke Test two -->
-  </suite> <!-- Funtional Testing -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

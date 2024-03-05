@@ -4,12 +4,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
-/***********************************************************************************
-*                                                                                  *
-* Class Name     : PropertiesLoad                                                  * 
-* Description    : To Load the PROPERTIES file from the desired location.          *
-*                                                                                  *
-************************************************************************************/
+
 
 public class PropertiesLoad {
 	

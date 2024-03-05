@@ -3,12 +3,6 @@ package userDefinedLibraries;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
-/***********************************************************************************
-*                                                                                  *
-* Class Name     : ExtentReportManager                                             * 
-* Description    : To Create the extent report file and store that as html file.   *
-*                                                                                  *
-************************************************************************************/
 
 public class ExtentReportManager {
 
